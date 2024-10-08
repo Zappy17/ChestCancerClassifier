@@ -1,1 +1,1 @@
-# ChestCancerClassifier
+# ChestCancerDetectionAI

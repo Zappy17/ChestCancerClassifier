@@ -1,0 +1,38 @@
+
+[2024-08-19 18:10:22,583: INFO: __init__: Logging setup complete.]
+[2024-10-08 16:23:51,260: INFO: __init__: Logging setup complete.]
+[2024-10-08 16:24:03,741: INFO: __init__: Logging setup complete.]
+[2024-10-08 17:06:42,540: INFO: __init__: Logging setup complete.]
+[2024-10-08 17:06:54,062: INFO: main: >>>> stage Data Ingestion Pipeline started <<<<]
+[2024-10-08 17:06:54,100: INFO: common: config\config.yaml : file loaded sucssefully]
+[2024-10-08 17:06:54,103: ERROR: main: Return value of <function read_yaml at 0x0000028037542B60> of type <class 'NoneType'> does not match annotation type <class 'box.config_box.ConfigBox'>]
+Traceback (most recent call last):
+  File "c:\Users\Zuhair Ansari\ChestCancerClassifier\main.py", line 10, in <module>
+    obj.main()
+  File "c:\users\zuhair ansari\chestcancerclassifier\src\ChestCancerDetectionAI\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\zuhair ansari\chestcancerclassifier\src\ChestCancerDetectionAI\config\configuration.py", line 16, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Miniconda\envs\MLOPS\Lib\site-packages\ensure\main.py", line 875, in __call__
+    raise EnsureError(msg.format(f=self.f, t=self.return_templ, valt=type(return_val)))
+ensure.main.EnsureError: Return value of <function read_yaml at 0x0000028037542B60> of type <class 'NoneType'> does not match annotation type <class 'box.config_box.ConfigBox'>
+[2024-10-08 17:17:29,589: INFO: __init__: Logging setup complete.]
+[2024-10-08 17:17:33,663: INFO: main: >>>> stage Data Ingestion Pipeline started <<<<]
+[2024-10-08 17:17:33,704: INFO: common: config\config.yaml : file loaded successfully]
+[2024-10-08 17:17:33,921: INFO: common: params.yaml : file loaded successfully]
+[2024-10-08 17:17:33,944: INFO: common: created directory at path: artifacts]
+[2024-10-08 17:17:33,950: INFO: common: created directory at path: artifacts/data_ingestion]
+[2024-10-08 17:17:33,952: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-10-08 17:17:49,837: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-10-08 17:17:54,614: INFO: main: >>>> stage Data Ingestion Pipeline Completed <<<<]
+[2024-10-08 17:20:53,457: INFO: __init__: Logging setup complete.]
+[2024-10-08 17:20:56,091: INFO: main: >>>> stage Data Ingestion Pipeline started <<<<]
+[2024-10-08 17:20:56,107: INFO: common: config\config.yaml : file loaded successfully]
+[2024-10-08 17:20:56,112: INFO: common: params.yaml : file loaded successfully]
+[2024-10-08 17:20:56,113: INFO: common: created directory at path: artifacts]
+[2024-10-08 17:20:56,114: INFO: common: created directory at path: artifacts/data_ingestion]
+[2024-10-08 17:20:56,115: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-10-08 17:21:09,447: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-10-08 17:21:11,376: INFO: main: >>>> stage Data Ingestion Pipeline Completed <<<<]
