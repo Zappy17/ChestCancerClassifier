@@ -36,3 +36,64 @@ ensure.main.EnsureError: Return value of <function read_yaml at 0x0000028037542B
 [2024-10-08 17:20:56,115: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
 [2024-10-08 17:21:09,447: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
 [2024-10-08 17:21:11,376: INFO: main: >>>> stage Data Ingestion Pipeline Completed <<<<]
+[2024-10-17 21:31:45,543: INFO: __init__: Logging setup complete.]
+[2024-10-17 21:37:34,773: INFO: __init__: Logging setup complete.]
+[2024-10-17 21:40:21,743: INFO: main: >>>> stage Data Ingestion Pipeline started <<<<]
+[2024-10-17 21:40:22,076: INFO: common: config\config.yaml : file loaded successfully]
+[2024-10-17 21:40:22,160: INFO: common: params.yaml : file loaded successfully]
+[2024-10-17 21:40:22,199: INFO: common: created directory at path: artifacts]
+[2024-10-17 21:40:22,205: INFO: common: created directory at path: artifacts/data_ingestion]
+[2024-10-17 21:40:22,228: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-10-17 21:40:36,904: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-10-17 21:40:41,047: INFO: main: >>>> stage Data Ingestion Pipeline Completed <<<<]
+[2024-10-17 21:40:41,047: INFO: main: *******************]
+[2024-10-17 21:40:41,047: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-10-17 21:40:41,080: INFO: common: config\config.yaml : file loaded successfully]
+[2024-10-17 21:40:41,092: INFO: common: params.yaml : file loaded successfully]
+[2024-10-17 21:40:41,100: INFO: common: created directory at path: artifacts]
+[2024-10-17 21:40:56,981: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-10-17 21:40:58,777: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-10-17 21:41:00,279: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-10-17 21:41:08,732: INFO: __init__: Logging setup complete.]
+[2024-10-17 21:42:16,907: INFO: main: >>>> stage Data Ingestion Pipeline started <<<<]
+[2024-10-17 21:42:16,924: INFO: common: config\config.yaml : file loaded successfully]
+[2024-10-17 21:42:17,053: INFO: common: params.yaml : file loaded successfully]
+[2024-10-17 21:42:17,107: INFO: common: created directory at path: artifacts]
+[2024-10-17 21:42:17,118: INFO: common: created directory at path: artifacts/data_ingestion]
+[2024-10-17 21:42:17,119: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-10-17 21:42:30,015: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-10-17 21:42:43,333: ERROR: main: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\Chest-CT-Scan-data\\normal\\20 (2).png']
+Traceback (most recent call last):
+  File "c:\Users\Zuhair Ansari\ChestCancerClassifier\main.py", line 10, in <module>
+    obj.main()
+  File "c:\users\zuhair ansari\chestcancerclassifier\src\ChestCancerDetectionAI\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.extract_zip_file()
+  File "c:\users\zuhair ansari\chestcancerclassifier\src\ChestCancerDetectionAI\components\data_ingestion.py", line 45, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "C:\Miniconda\envs\MLOPS\Lib\zipfile\__init__.py", line 1744, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "C:\Miniconda\envs\MLOPS\Lib\zipfile\__init__.py", line 1801, in _extract_member
+    open(targetpath, "wb") as target:
+    ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\Chest-CT-Scan-data\\normal\\20 (2).png'
+[2024-10-17 22:02:30,771: INFO: __init__: Logging setup complete.]
+[2024-10-17 22:03:30,403: INFO: main: >>>> stage Data Ingestion Pipeline started <<<<]
+[2024-10-17 22:03:30,452: INFO: common: config\config.yaml : file loaded successfully]
+[2024-10-17 22:03:30,509: INFO: common: params.yaml : file loaded successfully]
+[2024-10-17 22:03:30,532: INFO: common: created directory at path: artifacts]
+[2024-10-17 22:03:30,534: INFO: common: created directory at path: artifacts/data_ingestion]
+[2024-10-17 22:03:30,535: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-10-17 22:03:43,039: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-10-17 22:04:04,420: INFO: main: >>>> stage Data Ingestion Pipeline Completed <<<<]
+[2024-10-17 22:04:04,420: INFO: main: *******************]
+[2024-10-17 22:04:04,420: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-10-17 22:04:04,458: INFO: common: config\config.yaml : file loaded successfully]
+[2024-10-17 22:04:04,462: INFO: common: params.yaml : file loaded successfully]
+[2024-10-17 22:04:04,466: INFO: common: created directory at path: artifacts]
+[2024-10-17 22:04:14,262: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-10-17 22:04:15,975: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-10-17 22:04:16,261: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
