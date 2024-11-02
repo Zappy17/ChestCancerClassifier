@@ -5,7 +5,18 @@ import tensorflow as tf
 import time
 from ChestCancerDetectionAI.entity.config_entity import TrainingConfig
 from pathlib import Path
+import numpy as np
+import random
 
+# Set random seeds for reproducibility
+def set_seeds(seed=42):
+    os.environ['PYTHONHASHSEED'] = str(seed)
+    random.seed(seed)
+    np.random.seed(seed)
+    tf.random.set_seed(seed)
+
+# Call set_seeds at the start of the script
+set_seeds()
 class Training:
     def __init__(self, config: TrainingConfig):
         self.config = config
