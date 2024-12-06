@@ -2309,3 +2309,23 @@ FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open f
 [2024-11-07 20:24:43,661: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
 [2024-11-07 20:24:48,521: WARNING: polymorphic_function: 5 out of the last 5 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x000001D36DCBB600> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
 [2024-11-07 20:24:48,665: INFO: _internal: 192.168.0.104 - - [07/Nov/2024 20:24:48] "POST /predict HTTP/1.1" 200 -]
+[2024-11-08 03:32:19,100: INFO: __init__: Logging setup complete.]
+[2024-11-08 03:36:22,768: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080]
+[2024-11-08 03:36:22,795: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-11-08 03:38:17,172: INFO: _internal: 192.168.0.104 - - [08/Nov/2024 03:38:17] "GET / HTTP/1.1" 200 -]
+[2024-11-08 03:38:22,411: INFO: _internal: 192.168.0.104 - - [08/Nov/2024 03:38:22] "GET / HTTP/1.1" 200 -]
+[2024-11-08 03:38:23,685: INFO: _internal: 192.168.0.104 - - [08/Nov/2024 03:38:23] "GET / HTTP/1.1" 200 -]
+[2024-11-08 03:38:24,368: INFO: _internal: 192.168.0.104 - - [08/Nov/2024 03:38:24] "GET / HTTP/1.1" 200 -]
+[2024-11-08 03:38:25,356: INFO: _internal: 192.168.0.104 - - [08/Nov/2024 03:38:25] "GET / HTTP/1.1" 200 -]
+[2024-11-08 03:41:28,908: INFO: _internal: 192.168.0.104 - - [08/Nov/2024 03:41:28] "GET / HTTP/1.1" 200 -]
+[2024-11-08 03:41:30,244: INFO: _internal: 192.168.0.104 - - [08/Nov/2024 03:41:30] "GET / HTTP/1.1" 200 -]
+[2024-11-08 03:41:31,056: INFO: _internal: 192.168.0.104 - - [08/Nov/2024 03:41:31] "GET / HTTP/1.1" 200 -]
+[2024-11-08 03:41:31,405: INFO: _internal: 192.168.0.104 - - [08/Nov/2024 03:41:31] "GET / HTTP/1.1" 200 -]
+[2024-11-08 03:49:41,941: INFO: _internal: 192.168.0.104 - - [08/Nov/2024 03:49:41] "GET / HTTP/1.1" 200 -]
+[2024-11-08 03:49:44,252: INFO: _internal: 192.168.0.104 - - [08/Nov/2024 03:49:44] "GET / HTTP/1.1" 200 -]
+[2024-11-08 03:49:47,025: INFO: _internal: 192.168.0.104 - - [08/Nov/2024 03:49:47] "GET / HTTP/1.1" 200 -]
+[2024-11-08 03:49:48,952: INFO: _internal: 192.168.0.104 - - [08/Nov/2024 03:49:48] "GET / HTTP/1.1" 200 -]
+[2024-11-08 03:49:53,621: INFO: _internal: 192.168.0.104 - - [08/Nov/2024 03:49:53] "GET / HTTP/1.1" 200 -]
